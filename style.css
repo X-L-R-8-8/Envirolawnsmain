@@ -40,3 +40,74 @@ scroll-behavior:smooth;
   color: black;
 }
 /*---- End of navagtion styling ---*/
+
+
+.home-section {
+  background: #39E327;
+}
+
+.about-section {
+  /*--
+  height:100vh;
+  display: flex;
+  align-items: center; --*/
+}
+
+.gallery-section {
+  border-radius: 10px;
+  border-color: black;
+  border-spacing: 10px;
+
+}
+
+.before-side {
+    float: left;
+    width: 48%;
+    margin: 1%;
+}
+.after-side {
+    word-break: break-all;
+}
+
+.testimonials-section {
+background-color:whitesmoke;
+background-size: 100% 100%;
+}
+
+
+/*---- End of footer ----*/
+.footer-section {
+   left: 0;
+   bottom: 0px;
+   width:100%;
+   background:#111;
+   color: white;
+   font-size: 18px;
+   background-image: url("images/footer/grass background.png");
+   background-size:cover;
+   background-repeat: no-repeat;
+} 
+
+.social{
+  font-size: 20px;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*---- End of footer ----*/
+

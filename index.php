@@ -67,3 +67,4 @@
     </section>
 
 
+ <?php include ("footer.html"); ?>
