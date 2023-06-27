@@ -41,7 +41,6 @@ scroll-behavior:smooth;
 }
 /*---- End of navagtion styling ---*/
 
-
 .home-section {
   background: #39E327;
 }
@@ -111,3 +110,31 @@ background-size: 100% 100%;
 
 /*---- End of footer ----*/
 
+
+
+
+/*---- scrollbar ----*/
+
+::-webkit-scrollbar { 
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(172, 161, 161);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(105, 104, 104);
+} 
+
+::-webkit-scrollbar-thumb:active {
+  background: rgb(63, 61, 61);
+}
+
+/*---- End of scrollbar ---*/
