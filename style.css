@@ -2,13 +2,31 @@
 body { 
 font-family:helvetica;
 font-size: 18px;
-padding: 10px;
+padding: 50px;
+
+}
+text{
+    padding: 50px;
+}
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
 }
 
-h1 {
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+
+h1 h2 {
   text-align:center;
   font-size: 40px;
 }
+
 
 html{
 scroll-behavior:smooth;
@@ -39,42 +57,50 @@ scroll-behavior:smooth;
   background-color: rgb(0, 255, 8);
   color: black;
 }
+
+
+
 /*---- End of navagtion styling ---*/
-
-.home-section {
-  background: #39E327;
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
 }
 
-.about-section {
-  /*--
-  height:100vh;
-  display: flex;
-  align-items: center; --*/
-}
-
-.gallery-section {
-  border-radius: 10px;
-  border-color: black;
-  border-spacing: 10px;
-
-}
-
-.before-side {
-    float: left;
-    width: 48%;
-    margin: 1%;
-}
-.after-side {
-    word-break: break-all;
-}
-
-.testimonials-section {
-background-color:whitesmoke;
-background-size: 100% 100%;
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width:100%;
+  }
 }
 
 
-/*---- End of footer ----*/
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
 .footer-section {
    left: 0;
    bottom: 0px;
