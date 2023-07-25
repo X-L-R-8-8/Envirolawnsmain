@@ -8,6 +8,11 @@ padding: 50px;
 text{
     padding: 50px;
 }
+
+.text-wrapper {
+    padding: 10px; /* Adjust this value to control the spacing */
+}
+
 /* Style the header */
 .header {
   padding: 80px;
@@ -101,37 +106,155 @@ div.desc {
 
 
 
-.footer-section {
-   left: 0;
-   bottom: 0px;
-   width:100%;
-   background:#111;
-   color: white;
-   font-size: 18px;
-   background-image: url("images/footer/grass background.png");
-   background-size:cover;
-   background-repeat: no-repeat;
-} 
+/*--- Start of footer ----*/
 
-.social{
-  font-size: 20px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.hero-section h2 {
+    font-size: 36px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.services-section {
+    margin: 50px 0;
+}
+
+.services-section h2 {
+    font-size: 24px;
+}
+
+.testimonials-section {
+    margin: 50px 0;
+}
+
+.testimonials-section h2 {
+    font-size: 24px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
 
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+/* Add any specific styling for the footer here if needed */
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px 0;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-info,
+.contact-info {
+    flex: 1 0 45%;
+    margin: 10px 0;
+}
+
+.footer-info h3,
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
 
 
 /*---- End of footer ----*/
