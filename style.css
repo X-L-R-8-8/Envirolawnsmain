@@ -23,9 +23,6 @@ html{
 scroll-behavior:smooth;
 }
 
-/*---- Navagation styling ----*/
-
-
 
 
 /* Navigation styling */
@@ -89,6 +86,7 @@ scroll-behavior:smooth;
 .services-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -153,14 +151,14 @@ scroll-behavior:smooth;
 
 
 /*---- End of navagtion styling ---*/
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .topnav a {
     float: none;
@@ -240,21 +238,40 @@ nav ul li a {
     margin-top: 20px;
 }
 
-.services-section {
-    margin: 50px 0;
+
+
+/* Testimonials Page Styling */
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.services-section h2 {
-    font-size: 24px;
+.testimonial-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.testimonials-section {
-    margin: 50px 0;
+.testimonial-content {
+    text-align: center;
 }
 
-.testimonials-section h2 {
-    font-size: 24px;
+.testimonial-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
+
+.testimonial-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ... Existing CSS rules ... */
 
 footer {
     background-color: #f2f2f2;
