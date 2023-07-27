@@ -19,10 +19,6 @@
 
 
 
-<h2> Home (place holder) </h2>
-
-
-
 
     <!-- Main content section -->
     <main>

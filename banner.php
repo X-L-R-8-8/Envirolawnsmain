@@ -1,11 +1,11 @@
-  
+
   <link rel="stylesheet" type="text/css" href="style.css">
 <div class="header">
 
 
-	<h1 style="font-size:75px;">
-		Enviro Lawns 
-	</h1>
+	   <div class="header">
+        <h1>Enviro Lawns</h1>
+    </div>
 </div>
 	<div class="topnav">
 

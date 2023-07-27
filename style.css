@@ -5,31 +5,17 @@ font-size: 18px;
 padding: 50px;
 
 }
-text{
-    padding: 50px;
-}
-
 .text-wrapper {
-    padding: 10px; /* Adjust this value to control the spacing */
+    padding: 100px;
 }
 
-/* Style the header */
+/* Header styling */
 .header {
-  padding: 80px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-}
-
-/* Increase the font size of the h1 element */
-.header h1 {
-  font-size: 40px;
-}
-
-
-h1 h2 {
-  text-align:center;
-  font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #2AA61C;
+    color: #fff;
+    font-size: 48px;
 }
 
 
@@ -39,29 +25,130 @@ scroll-behavior:smooth;
 
 /*---- Navagation styling ----*/
 
+
+
+
+/* Navigation styling */
 .topnav {
-  background-color: #2AA61C;
-  overflow: hidden;
-  border-radius: 10px; 
+    top: 0;
+    width: 100%;
+    background-color: #2AA61C;
+    overflow: hidden;
+ 
 }
 
 .topnav a {
-   float: left;
-   color: black;
-   text-align: center;
-   padding: 14px;
-   text-decoration: none;
-   font-size: 23px;
- }
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
 
 .topnav a:hover {
-  background-color: #00FF08;
+    background-color: #00FF08;
 }
 
 .topnav .active {
-  background-color: rgb(0, 255, 8);
-  color: black;
+    background-color: #00FF08;
+    color: #000;
 }
+
+
+
+/* About Me Page Styling */
+.about-content {
+    padding: 20px;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+/* Services Page Styling */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.service {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.service-image {
+    flex: 0 0 150px;
+    margin-right: 20px;
+}
+
+.service-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-description {
+    flex: 1;
+}
+
+.service-description h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-description p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Gallery Page Styling */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.responsive {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the percentage to fit the number of images per row */
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+}
+
 
 
 
@@ -82,27 +169,6 @@ scroll-behavior:smooth;
 }
 
 
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
 
 
 
@@ -287,3 +353,7 @@ footer .container {
 }
 
 /*---- End of scrollbar ---*/
+
+
+
+

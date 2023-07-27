@@ -10,6 +10,8 @@
 
     <?php include("banner.php"); ?>
 
+   <div class="text-wrapper">
+   
     <h1> Testimonials: </h1> 
       
         <p>
@@ -30,7 +32,9 @@
 
         <b>Neil,</b> <br>
         <em>“Charlie does our lawns every three weeks. He has also done some garden tidying and weeding for us. We highly recommend him.” </em>
-        
+        </div>
         <?php include ("footer.php"); ?>
+        
       
      </body>
+     
