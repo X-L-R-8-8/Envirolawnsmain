@@ -57,7 +57,28 @@ function test_input($data) {
   $data = htmlspecialchars($data);// saved as HTML escaped code
   return $data;
 }
+    
+    include "setup.php";
+    
+    
+    
+    
+$sql = "INSERT INTO contacts (fname, lname, email, comment)
+VALUES ('$fname', '$lname', '$email', '$comment')";
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
 ?>
+    
+    
+    
+
+
 </head>
 <body>
 
