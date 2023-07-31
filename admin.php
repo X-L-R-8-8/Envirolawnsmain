@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Enviro Lawns</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     
+    
+    
+
+<?php include("banner.php"); ?>
+
+
+
+
+    <!-- Main content section -->
+    <main>
+        <div class="container">
+            
+    
+<div class="text-wrapper">
+
     
     <?php 
         // Include the setup.php file to establish database connection
@@ -45,47 +60,14 @@
 mysqli_close($conn);
 
         
-
-
-
-
-// define variables and set to empty values
-$fname = $lname = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    //we can check each $_POST variable with the test_input() function
-  $lname = test_input($_POST["lname"]);
-  $fname = test_input($_POST["fname"]);
-  $email = test_input($_POST["email"]);
-  // $website = test_input($_POST["website"]);
-  $comment = test_input($_POST["comment"]);
-  $gender = test_input($_POST["gender"]);
-}
-
-function test_input($data) {
-  $data = trim($data); //Strip unnecessary characters (extra space, tab, newline)
-  $data = stripslashes($data);//Remove backslashes (\) from the user input data
-  $data = htmlspecialchars($data);// saved as HTML escaped code
-  return $data;
-}
-    
-    include "setup.php";
-    
-    
-    
-    
-$sql = "INSERT INTO contacts (fname, lname, email, comment)
-VALUES ('$fname', '$lname', '$email', '$comment')";
-
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
 ?>
-    
+
+
+
+        </div>
+        </div>
+    </main>
+
     
     
 
