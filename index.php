@@ -48,7 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = test_input($_POST["email"]);
   // $website = test_input($_POST["website"]);
   $comment = test_input($_POST["comment"]);
-  $gender = test_input($_POST["gender"]);
 }
 
 function test_input($data) {
@@ -79,7 +78,7 @@ $conn->close();
     
 
 
-</head>
+
 <body>
 
 
@@ -98,25 +97,21 @@ $conn->close();
   <input type="text" id="email" name="email" value="<?php print $email;?>"><br><br>
     <label for="comment">Comment:</label><br>
      <textarea name="comment" rows="5" cols="40" value="<?php print $comment;?>"></textarea><br><br>
-    <label for="gender">Gender:<?php print $gender;?></label><br>
-<input type="radio" name="gender" value="female">Female
-<input type="radio" name="gender" value="male">Male
-<input type="radio" name="gender" value="other">Other
-  <br><br>
+  
     <input type="submit" value="Submit">
 
 
 </form> 
 
 </div>
-</div>
     </div>
+
    <?php include 'footer.php'; ?>
 
 
     
 </body>
-</html>
+
 
     
     
