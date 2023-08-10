@@ -1,18 +1,17 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Login</title>
-         <link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
+<html lang="en">
+
+<head>
+ <title>Enviro Lawns - Home</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/f743cfc9ef.js" crossorigin="anonymous"></script>
+</head>
 	<body>
-        
-        
-
-<?php include("banner.php"); ?>
-
     
-    <div class="text-wrapper">    
 		<div class="login">
 			<h1>Login</h1>
 			<form action="authenticate.php" method="post">
@@ -27,11 +26,6 @@
 				<input type="submit" value="Login">
 			</form>
 		</div>
-    </div>
-        
-        
-
-   <?php include 'footer.php'; ?>
     
 	</body>
 </html>

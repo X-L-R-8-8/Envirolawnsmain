@@ -13,10 +13,9 @@
 		<a href="gallery.php">Gallery</a>
 		<a href="testimonials.php">Testimonials</a>
         <a href="about.php">About us</a>
-        <a href="phplogin/login.php">Login</a>
         <a href="phplogin/register.php">Register</a>
+        <a href="phplogin/login.php">Login</a>
         
-
 	</div>
 	<!--/ Navagation buttons divisions -->
 
