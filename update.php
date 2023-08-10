@@ -19,7 +19,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         mysqli_stmt_bind_param($stmt, "ssssi", $fname, $lname, $email, $comment, $id);
 
                 if(mysqli_stmt_execute($stmt)) {
-            echo 'Record updated successfully.';
+            // Record updated successfully, redirect to admin.php
+            mysqli_stmt_close($stmt);
+            mysqli_close($conn);
+            header("Location: admin.php");
+            exit(); // Make sure to exit after the redirect
         } else {
             echo 'Error updating record: ' . mysqli_stmt_error($stmt);
         }

@@ -18,8 +18,6 @@
 <?php include("banner.php"); ?>
 
 
-
-
     <!-- Main content section -->
     <main>
         <div class="container">
@@ -32,7 +30,7 @@
         </div>
     </main>
 
-<div class="text-wrapper">
+
 
 
     
@@ -80,6 +78,8 @@ $conn->close();
 
 
 <body>
+    
+    <div class="text-wrapper">
 
 
     <div class="row">
@@ -101,16 +101,24 @@ $conn->close();
     <input type="submit" value="Submit">
 
 
-</form> 
+      </form> 
 
 </div>
     </div>
+    </div>
 
+
+
+  
+    
    <?php include 'footer.php'; ?>
+    
+    
+    </body>
+    
 
 
     
-</body>
 
 
     

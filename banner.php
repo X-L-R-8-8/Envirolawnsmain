@@ -1,5 +1,4 @@
 
-  <link rel="stylesheet" type="text/css" href="style.css">
 <div class="header">
 
 
@@ -13,7 +12,10 @@
 		<a href="services.php">Services</a>
 		<a href="gallery.php">Gallery</a>
 		<a href="testimonials.php">Testimonials</a>
-        <a href="about.php">About me</a>
+        <a href="about.php">About us</a>
+        <a href="phplogin/login.php">Login</a>
+        <a href="phplogin/register.php">Register</a>
+        
 
 	</div>
 	<!--/ Navagation buttons divisions -->

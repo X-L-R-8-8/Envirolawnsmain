@@ -7,11 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+    
     <?php include("banner.php"); ?>
-
-   
-   
-   
    
    
      <div class="gallery-container">
