@@ -23,10 +23,6 @@ $stmt->fetch();
 $stmt->close();
 
 
-
-
-
-
 ?>
 
 
@@ -41,11 +37,14 @@ $stmt->close();
 		<title>Profile Page</title>
 		<link href="../css/style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.9.0/main.js"></script>
 	</head>
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<h1>Website Title</h1>
+				<h1>Envirolawns</h1>
 				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 			</div>
@@ -70,5 +69,52 @@ $stmt->close();
 				</table>
 			</div>
 		</div>
+        
+        <div class = "text-wrapper">  
+  <div class = "booking-title"> 
+    <h1>Booking System</h1> </div> 
+    
+    <!-- Calendar -->
+    <div id="calendar"></div>
+
+    <!-- Booking Form -->
+    <form action="book.php" method="post">
+        <label for="event_date">Date:</label>
+        <input type="date" name="event_date" required><br>
+        
+        <label for="start_time">Start Time:</label>
+        <input type="time" name="start_time" required><br>
+        
+        <label for="end_time">End Time:</label>
+        <input type="time" name="end_time" required><br>
+        
+        <label for="description">Description:</label>
+        <textarea name="description" rows="4" required></textarea><br>
+        
+        <input type="submit" value="Book">
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                selectable: true,
+                select: function(info) {
+                    // When a date is selected on the calendar, populate the date field in the form
+                    document.querySelector("input[name='event_date']").value = info.startStr;
+                }
+            });
+
+            calendar.render();
+        });
+    </script>
+    
+    </div>
+
+        
+        
+        
 	</body>
 </html>

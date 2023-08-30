@@ -8,13 +8,15 @@ include ("../setup.php");
 
  if (!isset($_POST['username'] )) {       
 
+     
+     
+     
 // Now we check if the data was submitted, isset() function will check if the data exists.
 if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
 	// Could not get the data that should have been sent.
 	exit('Please complete the registration form!');
 }
-        
-
+    
         
 // Make sure the submitted registration values are not empty.
 if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['email'])) {
@@ -39,6 +41,8 @@ if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 5) {
 	exit('Password must be between 5 and 20 characters long!');
 }
 
+     
+     
 
 // We need to check if the account with that username exists.
 if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
@@ -51,6 +55,9 @@ if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?
 		// Username already exists
 		echo 'Username exists, please choose another!';
 	} else {
+        
+        
+    
 		// Username doesn't exists, insert new account
 if ($stmt = $conn->prepare('INSERT INTO accounts (username, password, email, activation_code) VALUES (?, ?, ?, ?)')) {
 

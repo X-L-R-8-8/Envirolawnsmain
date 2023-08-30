@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 10, 2023 at 11:18 PM
+-- Generation Time: Aug 30, 2023 at 02:59 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -31,15 +31,31 @@ CREATE TABLE `accounts` (
   `id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `email` varchar(100) NOT NULL
+  `email` varchar(100) NOT NULL,
+  `activation_code` varchar(50) DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `accounts`
 --
 
-INSERT INTO `accounts` (`id`, `username`, `password`, `email`) VALUES
-(1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com');
+INSERT INTO `accounts` (`id`, `username`, `password`, `email`, `activation_code`) VALUES
+(1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bookings`
+--
+
+CREATE TABLE `bookings` (
+  `id` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  `event_date` date DEFAULT NULL,
+  `start_time` time DEFAULT NULL,
+  `end_time` time DEFAULT NULL,
+  `description` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -62,25 +78,15 @@ CREATE TABLE `contacts` (
 INSERT INTO `contacts` (`id`, `fname`, `lname`, `email`, `comment`) VALUES
 (1, 'jack', 'lee', 'jack@mail.com', 'i like your food'),
 (2, 'Jamie', 'jacobs', 'jamie@email.com', 'i like your drinks'),
-(37, '', '', '', ''),
-(38, '', '', '', ''),
-(39, '', '', '', ''),
-(40, '', '', '', ''),
-(41, '', '', '', ''),
-(42, '', '', '', ''),
-(43, '', '', '', ''),
-(44, '', '', '', ''),
-(45, '', '', '', ''),
-(46, '', '', '', ''),
-(47, '', '', '', ''),
-(48, '', '', '', ''),
-(49, '', '', '', ''),
-(50, '', '', '', ''),
-(51, '', '', '', ''),
-(52, '', '', '', ''),
-(53, '', '', '', ''),
-(54, '', '', '', ''),
-(55, '', '', '', '');
+(61, 'testing', 'this', 'rodtovnz@gmail.com', 'testing what database'),
+(62, '', '', '', ''),
+(63, '', '', '', ''),
+(64, '', '', '', ''),
+(65, '', '', '', ''),
+(66, '', '', '', ''),
+(67, '', '', '', ''),
+(68, '', '', '', ''),
+(69, '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -113,6 +119,12 @@ ALTER TABLE `accounts`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `bookings`
+--
+ALTER TABLE `bookings`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `contacts`
 --
 ALTER TABLE `contacts`
@@ -135,10 +147,16 @@ ALTER TABLE `accounts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `bookings`
+--
+ALTER TABLE `bookings`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT for table `pages`

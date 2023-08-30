@@ -25,6 +25,57 @@ scroll-behavior:smooth;
 
 
 
+
+
+
+/* Style the header */
+.booking-title {
+    color: #333;
+}
+
+/* Style the booking form */
+.booking-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.booking-form input[type="date"],
+.booking-form input[type="time"],
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.booking-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+
+
+
 /* Navigation styling */
 .topnav {
     top: 0;
@@ -594,7 +645,6 @@ body.loggedin {
         .about-content {
             margin-top: 20px;
         }
-
 
 
 

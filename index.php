@@ -24,7 +24,7 @@
             <section class="hero-section">
                 <h2>Your Beautiful Lawn Awaits</h2>
                 <p>We offer professional lawn mowing and care services to keep your lawn green and healthy all year round.</p>
-                <a href="#" class="cta-button">Get a Quote</a>
+                <a href="booking.php" class="cta-button">Get a Quote</a>
             </section>
          
         </div>
@@ -44,7 +44,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $lname = test_input($_POST["lname"]);
   $fname = test_input($_POST["fname"]);
   $email = test_input($_POST["email"]);
-  // $website = test_input($_POST["website"]);
   $comment = test_input($_POST["comment"]);
 }
 
