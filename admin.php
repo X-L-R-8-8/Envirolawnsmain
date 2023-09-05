@@ -19,10 +19,7 @@
     <!-- Main content section -->
     <main>
         <div class="container">
-            
-    
-<div class="text-wrapper">
-
+            <div class="text-wrapper">
     
     <?php 
     
@@ -64,19 +61,13 @@ mysqli_close($conn);
 
         
 ?>
-
-
-
-        </div>
+            </div>
         </div>
     </main>
+</body>
 
     
     
-
-
-    </body>
-
 
 
     

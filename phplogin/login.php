@@ -24,6 +24,7 @@
 				</label>
 				<input type="password" name="password" placeholder="Password" id="password" required>
 				<input type="submit" value="Login">
+                 <p>Don't have an account? <a href="register.html">Register here</a></p>
 			</form>
 		</div>
     

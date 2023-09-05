@@ -24,7 +24,7 @@
             <section class="hero-section">
                 <h2>Your Beautiful Lawn Awaits</h2>
                 <p>We offer professional lawn mowing and care services to keep your lawn green and healthy all year round.</p>
-                <a href="booking.php" class="cta-button">Get a Quote</a>
+                <a href="phplogin/login.php" class="cta-button">Get a Quote</a>
             </section>
          
         </div>

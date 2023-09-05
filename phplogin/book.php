@@ -1,5 +1,10 @@
 <?php
-require_once 'setup.php';
+
+session_start();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+include ("../setup.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Get data from the form
@@ -11,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Insert data into the database
     $sql = "INSERT INTO bookings (user_id, event_date, start_time, end_time, description) VALUES (?, ?, ?, ?, ?)";
-    $stmt = $db->prepare($sql);
+    $stmt = $conn->prepare($sql);
     $stmt->bind_param("issss", $user_id, $event_date, $start_time, $end_time, $description);
     
     if ($stmt->execute()) {
@@ -23,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     
     // Close the database connection
-    $stmt->close();
-    $db->close();
+$conn->close();
 }
 ?>
+

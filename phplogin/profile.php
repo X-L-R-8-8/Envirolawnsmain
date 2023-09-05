@@ -1,7 +1,6 @@
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -22,6 +21,14 @@ $stmt->bind_result($password, $email);
 $stmt->fetch();
 $stmt->close();
 
+
+if ($account['activation_code'] == 'activated') {
+	// account is activated
+	// Display home page etc
+} else {
+	// account is not activated
+	// redirect user or display an error
+}
 
 ?>
 
@@ -118,3 +125,5 @@ $stmt->close();
         
 	</body>
 </html>
+
+
