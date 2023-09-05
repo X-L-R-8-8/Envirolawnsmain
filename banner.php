@@ -14,7 +14,7 @@
 		<a href="testimonials.php">Testimonials</a>
         <a href="about.php">About us</a>
         <a href="phplogin/register.html">Register</a>
-        <a href="phplogin/login.php">Login</a>
+        <a href="phplogin/login.html">Login</a>
         
 	</div>
 	<!--/ Navagation buttons divisions -->
