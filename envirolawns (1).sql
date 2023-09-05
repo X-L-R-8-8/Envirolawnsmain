@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 30, 2023 at 02:59 AM
+-- Generation Time: Sep 06, 2023 at 12:02 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -40,7 +40,13 @@ CREATE TABLE `accounts` (
 --
 
 INSERT INTO `accounts` (`id`, `username`, `password`, `email`, `activation_code`) VALUES
-(1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com', '');
+(1, 'test', '$2y$10$SfhYIDtn.iOuCW7zfoFLuuZHX6lja4lF4XA4JqNmpiH/.P3zB8JCa', 'test@test.com', ''),
+(2, 'chusdbcjs', '$2y$10$3ju8tP5xu298CKEvETymS.wnjow399wOIA9X46iddXT9UhnY0t5C2', 'charlie.cheeseman.nz@gmail.com', ''),
+(3, 'dan', '$2y$10$FS8QWl685pJeAGGiHxOid.9CxGHW/Q8QYwUmWMjIF5s8B2W1eQ8QK', 'danwenzlick2@gmail.com', ''),
+(4, 'dan1234', '$2y$10$Oa4HtmcizFptA0lTvqURROCh5Xwina9z6AngSCd48KgMRJ8CLHGdO', 'danwenzlick2@gmail.com', '64f7a1df3f0b8'),
+(5, 'dan123456', '$2y$10$6Kb27F5HvukyFW0WP2kvwukBVxsoAfobaW/rSnoUaoEuAFF1opUq2', 'dw10@mahurangi.school.nz', '64f7a2015d1e2'),
+(6, 'jhbjhdbs', '$2y$10$DPEmgwe7LO7BFCEbAenhCuWED7gnhNXszU8U./P8E.2aFxCX.G6DK', 'charlie.cheeseman.nz@gmail.com', '64f7a21638b9a'),
+(7, 'charlie', '$2y$10$gP9qQTrAE/YyXbLTXe/kB.ZSQBXNWtqmduwK47.TMz.jq7oL07hQq', 'cc56@mahurangi.school.nz', '64f7a23a0eff5');
 
 -- --------------------------------------------------------
 
@@ -56,6 +62,13 @@ CREATE TABLE `bookings` (
   `end_time` time DEFAULT NULL,
   `description` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `bookings`
+--
+
+INSERT INTO `bookings` (`id`, `user_id`, `event_date`, `start_time`, `end_time`, `description`) VALUES
+(1, 1, '2023-09-28', '21:32:00', '12:32:00', 'njbnjk');
 
 -- --------------------------------------------------------
 
@@ -78,15 +91,16 @@ CREATE TABLE `contacts` (
 INSERT INTO `contacts` (`id`, `fname`, `lname`, `email`, `comment`) VALUES
 (1, 'jack', 'lee', 'jack@mail.com', 'i like your food'),
 (2, 'Jamie', 'jacobs', 'jamie@email.com', 'i like your drinks'),
-(61, 'testing', 'this', 'rodtovnz@gmail.com', 'testing what database'),
-(62, '', '', '', ''),
-(63, '', '', '', ''),
-(64, '', '', '', ''),
-(65, '', '', '', ''),
-(66, '', '', '', ''),
-(67, '', '', '', ''),
-(68, '', '', '', ''),
-(69, '', '', '', '');
+(99, '', '', '', ''),
+(100, '', '', '', ''),
+(101, '', '', '', ''),
+(102, '', '', '', ''),
+(103, '', '', '', ''),
+(104, '', '', '', ''),
+(105, '', '', '', ''),
+(106, '', '', '', ''),
+(107, '', '', '', ''),
+(108, '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -144,19 +158,19 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=109;
 
 --
 -- AUTO_INCREMENT for table `pages`
