@@ -187,7 +187,7 @@ scroll-behavior:smooth;
 }
 
 .responsive {
-    flex: 0 0 calc(33.33% - 20px); /* Adjust the percentage to fit the number of images per row */
+    flex: 0 0 calc(33.33% - 20px); 
     margin-bottom: 20px;
 }
 

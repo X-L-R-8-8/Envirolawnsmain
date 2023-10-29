@@ -37,7 +37,7 @@
     
     <?php
 // define variables and set to empty values
-$fname = $lname = $email = $gender = $comment = $website = "";
+$fname = $lname = $email = $comment = $website = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //we can check each $_POST variable with the test_input() function
