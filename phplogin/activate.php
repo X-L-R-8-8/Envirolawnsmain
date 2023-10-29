@@ -1,17 +1,12 @@
 <?php
-// Change this to your connection info.
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 include ("../setup.php");
 
 
-// Try and connect using the info above.
-$conn = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
-if (mysqli_connect_errno()) {
-	// If there is an error with the connection, stop the script and display the error.
-	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
+
 // First we check if the email and code exists...
 if (isset($_GET['email'], $_GET['code'])) {
 	if ($stmt = $conn->prepare('SELECT * FROM accounts WHERE email = ? AND activation_code = ?')) {
@@ -26,7 +21,7 @@ if (isset($_GET['email'], $_GET['code'])) {
 				$newcode = 'activated';
 				$stmt->bind_param('sss', $newcode, $_GET['email'], $_GET['code']);
 				$stmt->execute();
-				echo 'Your account is now activated! You can now <a href="index.html">login</a>!';
+				echo 'Your account is now activated! You can now <a href="index.php">login</a>!';
 			}
 		} else {
 			echo 'The account is already activated or doesn\'t exist!';

@@ -61,7 +61,7 @@
         </div>
         
         <div class="gallery">
-            <img src="images/<?php echo $image1; ?>" alt="Profile Photo">
+            <img src="optimizedimages/<?php echo $image1; ?>" alt="Profile Photo">
         </div>
     </div>
     
