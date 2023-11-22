@@ -12,7 +12,7 @@
     <div class="services-container">
         <div class="service">
             <div class="service-image">
-                <img src="images/mowing.jpg" alt="Mowing Service">
+                <img src="optimizedimages/Optimized-lawnmowing.png" alt="Mowing Service">
             </div>
             <div class="service-description">
                 <h3>Regular or One-Off Mows</h3>
@@ -22,7 +22,7 @@
 
         <div class="service">
             <div class="service-image">
-                <img src="images/weeding.jpg" alt="Weeding Service">
+                <img src="optimizedimages/weedingservices.jpeg" alt="Weeding Service">
             </div>
             <div class="service-description">
                 <h3>Additional Weeding and Garden Tidy</h3>
@@ -32,7 +32,7 @@
 
         <div class="service">
             <div class="service-image">
-                <img src="images/pricing.jpg" alt="Pricing Service">
+                <img src="optimizedimages/pricing.jpeg" alt="Pricing Service">
             </div>
             <div class="service-description">
                 <h3>Competitive Pricing</h3>
@@ -42,7 +42,7 @@
 
         <div class="service">
             <div class="service-image">
-                <img src="images/property.jpg" alt="Property Service">
+                <img src="optimizedimages/property.jpeg" alt="Property Service">
             </div>
             <div class="service-description">
                 <h3>Local Omaha Care</h3>
@@ -53,7 +53,7 @@
         <!-- Additional Service: Hedge Trimming and Grooming -->
         <div class="service">
             <div class="service-image">
-                <img src="images/hedge.jpg" alt="Hedge Trimming and Grooming">
+                <img src="optimizedimages/hedge.jpeg" alt="Hedge Trimming and Grooming">
             </div>
             <div class="service-description">
                 <h3>Hedge Trimming and Grooming</h3>
@@ -64,7 +64,7 @@
         <!-- Additional Service: Before and After Photos and Invoicing -->
         <div class="service">
             <div class="service-image">
-                <img src="images/before_after.jpg" alt="Before and After Photos and Invoicing">
+                <img src="optimizedimages/before.jpeg" alt="Before and After Photos and Invoicing">
             </div>
             <div class="service-description">
                 <h3>Before and After Photos and Invoicing</h3>

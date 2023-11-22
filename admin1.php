@@ -22,7 +22,6 @@
             <div class="text-wrapper">
     
     <?php 
-    
 
     
         // Include the setup.php file to establish database connection

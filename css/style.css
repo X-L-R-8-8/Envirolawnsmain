@@ -107,96 +107,133 @@ scroll-behavior:smooth;
 
 
 /* About Me Page Styling */
-.about-content {
-    padding: 20px;
-}
-
-.about-section {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.about-section h2 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.about-section p {
-    font-size: 18px;
-    line-height: 1.6;
-}
 
 
+        
+
+        .gallery {
+            flex: 1;
+            padding: 20px;
+            margin-top: 20px; /* Adjust this value for desired spacing */
+        }
+        
+        .gallery img {
+            max-width: 60%;
+            height: auto;
+            display: block;
+        } 
+        
+        
+        .about-content {
+            margin-top: 50px;
+        }
 
 
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .about-text {
+            flex: 2;
+            padding: 70px;
+        }
+
+        .profile-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .contact-form {
+            margin-top: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
 
 
 
 /* Services Page Styling */
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-.service {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-}
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-.service-image {
-    flex: 0 0 150px;
-    margin-right: 20px;
-}
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-.service-image img {
-    width: 100%;
-    border-radius: 10px;
-}
+    .service {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+    }
 
-.service-description {
-    flex: 1;
-}
+    .service-image {
+        flex: 0 0 150px;
+        margin-right: 20px;
+    }
 
-.service-description h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+    .service-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
 
-.service-description p {
-    font-size: 18px;
-    line-height: 1.6;
-}
+    .service-description {
+        flex: 1;
+    }
+
+    .service-description h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .service-description p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
 
 
 /* Gallery Page Styling */
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-.responsive {
-    flex: 0 0 calc(33.33% - 20px); 
-    margin-bottom: 20px;
-}
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: none;
-}
+    .responsive {
+        flex: 0 0 calc(33.33% - 20px);
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        border: none;
+    }
 
 
 
@@ -206,7 +243,10 @@ scroll-behavior:smooth;
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
-  }
+    }
+    .responsive { flex-direction: column;
+        
+    }
 }
 
 
@@ -622,29 +662,8 @@ body.loggedin {
 }
 
 
- .gallery-container {
-            display: flex;
-            align-items: flex-start;
-        }
-        
-        .gallery {
-            flex: 1;
-            padding: 20px;
-        }
-        
-        .gallery img {
-            max-width: 100%;
-            height: auto;
-        }
-        
-        .text {
-            flex: 2;
-            padding: 20px;
-        }
-        
-        .about-content {
-            margin-top: 20px;
-        }
+
+
 
 
 
