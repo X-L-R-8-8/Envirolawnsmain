@@ -3,7 +3,7 @@
 
 
 	   <div class="header">
-        <h1>Enviro Lawns</h1>
+        <h1>Enviro Lawns</h1>  
     </div>
 </div>
 	<div class="topnav">
