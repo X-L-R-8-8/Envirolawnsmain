@@ -25,6 +25,29 @@ scroll-behavior:smooth;
 
 
 
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.home-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db; /* Change this color to your preferred color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home-button a:hover {
+    background-color: #2980b9; /* Change this color to your preferred hover color */
+}
+
+
+
 
 
 
